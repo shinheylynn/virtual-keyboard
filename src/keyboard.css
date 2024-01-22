@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.keyboard {
+  background-color: #808080;
+  border-radius: 3px;
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard-row {
+  flex-wrap: wrap;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.keyboard-row__two-keys {
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+}
+
+.key {
+  background-color: white;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-row span:not(.key__space) {
+  width: 70px;
+}
+
+.key__backspace {
+  width: 100px;
+}
+
+.key__tab,
+.key__straight {
+  width: 80px;
+  box-sizing: border-box;
+}
+
+.key__capslock {
+  width: 90px;
+}
+
+.key__enter {
+  width: 120px;
+}
+
+.key__shift-left {
+  width: 120px;
+}
+
+.key__shift-right {
+  width: 150px;
+}
+
+.key__space {
+  width: 380px;
+}
