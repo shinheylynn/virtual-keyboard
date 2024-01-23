@@ -1,0 +1,19 @@
+#input-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+#input-line input {
+  width: 95%;
+  max-width: 870px;
+  border: none;
+  border-bottom: 3px solid #eaeaea;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+:focus {
+  outline: none;
+}

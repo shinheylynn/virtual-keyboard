@@ -1,0 +1,15 @@
+@import 'variables.css';
+
+@import 'components/keyboard.css';
+@import 'components/view.css';
+@import 'components/input.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  /* 다크모드
+   filter: invert(100%) hue-rotate(180deg); */
+}

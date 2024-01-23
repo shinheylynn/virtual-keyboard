@@ -1,0 +1,10 @@
+#user-defined-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 600px;
+}
+
+.font {
+  padding-left: 80px;
+}

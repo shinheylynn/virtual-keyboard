@@ -1,173 +1,192 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="src/keyboard.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/keyboard.js"></script>
     <title>Virtual Keyboard</title>
   </head>
   <body>
-    <main class="keyboard">
-      <div class="keyboard-row first-row">
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key~" data-val="~">~</span>
-          <span class="key" data-code="Key`" data-val="`">`</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key!" data-val="`">!</span>
-          <span class="key" data-code="Key1" data-val="1">1</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key@" data-val="@">@</span>
-          <span class="key" data-code="Key2" data-val="2">2</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key#" data-val="`">#</span>
-          <span class="key" data-code="Key3" data-val="3">3</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key$" data-val="$">$</span>
-          <span class="key" data-code="Key4" data-val="4">4</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key%" data-val="%">%</span>
-          <span class="key" data-code="Key5" data-val="5">5</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key^" data-val="^">^</span>
-          <span class="key" data-code="Key6" data-val="6">6</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key&" data-val="&">&</span>
-          <span class="key" data-code="Key7" data-val="7">7</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key*" data-val="*">*</span>
-          <span class="key" data-code="Key8" data-val="8">8</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key(" data-val="(">(</span>
-          <span class="key" data-code="Key9" data-val="9">9</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key)" data-val=")">)</span>
-          <span class="key" data-code="Key0" data-val="0">0</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key_" data-val="_">_</span>
-          <span class="key" data-code="Key-" data-val="-">-</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key+" data-val="+">+</span>
-          <span class="key" data-code="Key=" data-val="=">=</span>
-        </div>
-        <span
-          class="key key__backspace"
-          data-code="KeyBackspace"
-          data-val="backspace"
-        >
-          Backspace
-        </span>
+    <div id="user-defined-view">
+      <button type="checkbox"></button>
+      <div class="font">
+        <span class="font__title">Font: </span>
+        <span class="font__toggle">Choose Font</span>
       </div>
-      <div class="keyboard-row second-row">
-        <span class="key key__tab" data-code="KeyTab" data-val="Tab">Tab</span>
-        <span class="key" data-code="KeyQ" data-val="q">Q</span>
-        <span class="key" data-code="KeyW" data-val="w">W</span>
-        <span class="key" data-code="KeyE" data-val="e">E</span>
-        <span class="key" data-code="KeyR" data-val="r">R</span>
-        <span class="key" data-code="KeyT" data-val="t">T</span>
-        <span class="key" data-code="KeyY" data-val="y">Y</span>
-        <span class="key" data-code="KeyU" data-val="u">U</span>
-        <span class="key" data-code="KeyI" data-val="i">I</span>
-        <span class="key" data-code="KeyO" data-val="o">O</span>
-        <span class="key" data-code="KeyP" data-val="p">P</span>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key{" data-val="{">{</span>
-          <span class="key" data-code="Key[" data-val="[">[</span>
+    </div>
+
+    <div id="input-line"><input /></div>
+
+    <main id="keyboard">
+      <div class="keyboard-background">
+        <div class="keyboard-row first-row">
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key~" data-val="~">~</span>
+            <span class="key" data-code="Key`" data-val="`">`</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key!" data-val="`">!</span>
+            <span class="key" data-code="Key1" data-val="1">1</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key@" data-val="@">@</span>
+            <span class="key" data-code="Key2" data-val="2">2</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key#" data-val="`">#</span>
+            <span class="key" data-code="Key3" data-val="3">3</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key$" data-val="$">$</span>
+            <span class="key" data-code="Key4" data-val="4">4</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key%" data-val="%">%</span>
+            <span class="key" data-code="Key5" data-val="5">5</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key^" data-val="^">^</span>
+            <span class="key" data-code="Key6" data-val="6">6</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key&" data-val="&">&</span>
+            <span class="key" data-code="Key7" data-val="7">7</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key*" data-val="*">*</span>
+            <span class="key" data-code="Key8" data-val="8">8</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key(" data-val="(">(</span>
+            <span class="key" data-code="Key9" data-val="9">9</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key)" data-val=")">)</span>
+            <span class="key" data-code="Key0" data-val="0">0</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key_" data-val="_">_</span>
+            <span class="key" data-code="Key-" data-val="-">-</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key+" data-val="+">+</span>
+            <span class="key" data-code="Key=" data-val="=">=</span>
+          </div>
+          <span
+            class="key key__backspace"
+            data-code="KeyBackspace"
+            data-val="backspace"
+          >
+            Backspace
+          </span>
         </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key}" data-val="}">}</span>
-          <span class="key" data-code="Key]" data-val="]">]</span>
+        <div class="keyboard-row second-row">
+          <span class="key key__tab" data-code="KeyTab" data-val="Tab"
+            >Tab</span
+          >
+          <span class="key" data-code="KeyQ" data-val="q">Q</span>
+          <span class="key" data-code="KeyW" data-val="w">W</span>
+          <span class="key" data-code="KeyE" data-val="e">E</span>
+          <span class="key" data-code="KeyR" data-val="r">R</span>
+          <span class="key" data-code="KeyT" data-val="t">T</span>
+          <span class="key" data-code="KeyY" data-val="y">Y</span>
+          <span class="key" data-code="KeyU" data-val="u">U</span>
+          <span class="key" data-code="KeyI" data-val="i">I</span>
+          <span class="key" data-code="KeyO" data-val="o">O</span>
+          <span class="key" data-code="KeyP" data-val="p">P</span>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key{" data-val="{">{</span>
+            <span class="key" data-code="Key[" data-val="[">[</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key}" data-val="}">}</span>
+            <span class="key" data-code="Key]" data-val="]">]</span>
+          </div>
+          <div class="keyboard-row__two-keys key__straight">
+            <span class="key key__straight" data-code="Key|" data-val="|"
+              >|</span
+            >
+            <span class="key key__straight" data-code="Key\" data-val="\"
+              >\</span
+            >
+          </div>
         </div>
-        <div class="keyboard-row__two-keys key__straight">
-          <span class="key key__straight" data-code="Key|" data-val="|">|</span>
-          <span class="key key__straight" data-code="Key\" data-val="\">\</span>
+        <div class="keyboard-row third-row">
+          <span
+            class="key key__capslock"
+            data-code="KeyCapsLock"
+            data-val="capsLock"
+            >CapsLock</span
+          >
+          <span class="key" data-code="KeyA" data-val="a">A</span>
+          <span class="key" data-code="KeyS" data-val="s">S</span>
+          <span class="key" data-code="KeyD" data-val="d">D</span>
+          <span class="key" data-code="KeyF" data-val="f">F</span>
+          <span class="key" data-code="KeyG" data-val="g">G</span>
+          <span class="key" data-code="KeyH" data-val="h">H</span>
+          <span class="key" data-code="KeyJ" data-val="j">J</span>
+          <span class="key" data-code="KeyK" data-val="k">K</span>
+          <span class="key" data-code="KeyL" data-val="l">L</span>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key:" data-val=":">:</span>
+            <span class="key" data-code="Key;" data-val=";">;</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code='Key"' data-val='"'>"</span>
+            <span class="key" data-code="Key'" data-val="'">'</span>
+          </div>
+          <span class="key key__enter" data-code="KeyEnter" data-val="enter"
+            >Enter</span
+          >
         </div>
-      </div>
-      <div class="keyboard-row third-row">
-        <span
-          class="key key__capslock"
-          data-code="KeyCapsLock"
-          data-val="capsLock"
-          >CapsLock</span
-        >
-        <span class="key" data-code="KeyA" data-val="a">A</span>
-        <span class="key" data-code="KeyS" data-val="s">S</span>
-        <span class="key" data-code="KeyD" data-val="d">D</span>
-        <span class="key" data-code="KeyF" data-val="f">F</span>
-        <span class="key" data-code="KeyG" data-val="g">G</span>
-        <span class="key" data-code="KeyH" data-val="h">H</span>
-        <span class="key" data-code="KeyJ" data-val="j">J</span>
-        <span class="key" data-code="KeyK" data-val="k">K</span>
-        <span class="key" data-code="KeyL" data-val="l">L</span>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key:" data-val=":">:</span>
-          <span class="key" data-code="Key;" data-val=";">;</span>
+        <div class="keyboard-row fourth-row">
+          <span
+            class="key key__shift-left"
+            data-code="KeyShiftLeft"
+            data-val="shift"
+            >Shift</span
+          >
+          <span class="key" data-code="KeyZ" data-val="z">Z</span>
+          <span class="key" data-code="KeyX" data-val="x">X</span>
+          <span class="key" data-code="KeyC" data-val="c">C</span>
+          <span class="key" data-code="KeyV" data-val="v">V</span>
+          <span class="key" data-code="KeyB" data-val="b">B</span>
+          <span class="key" data-code="KeyN" data-val="n">N</span>
+          <span class="key" data-code="KeyM" data-val="m">M</span>
+          <div class="keyboard-row__two-keys">
+            <!-- '&lt' = '<' -->
+            <span class="key" data-code="Key&lt;" data-val="&lt;">&lt;</span>
+            <span class="key" data-code="Key," data-val=",">,</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key>" data-val=">">></span>
+            <span class="key" data-code="Key." data-val=".">.</span>
+          </div>
+          <div class="keyboard-row__two-keys">
+            <span class="key" data-code="Key?" data-val="?">?</span>
+            <span class="key" data-code="Key/" data-val="/">/</span>
+          </div>
+          <span
+            class="key key__shift-right"
+            data-code="KeyShiftRight"
+            data-val="shift"
+            >Shift</span
+          >
         </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code='Key"' data-val='"'>"</span>
-          <span class="key" data-code="Key'" data-val="'">'</span>
+        <div class="keyboard-row fifth-row">
+          <span class="key" data-code="KeyCtrlLeft" data-val="ctrl">Ctrl</span>
+          <span class="key" data-code="Key-Left" data-val="-">-</span>
+          <span class="key" data-code="KeyAltLeft" data-val="alt">Alt</span>
+          <span class="key key__space" data-code="KeySpace" data-val="space"
+            >Space</span
+          >
+          <span class="key" data-code="KeyAltRight" data-val="alt">Alt</span>
+          <span class="key" data-code="KeyFn" data-val="fn">Fn</span>
+          <span class="key" data-code="Key-Right" data-val="-">-</span>
+          <span class="key" data-code="KeyCtrlRight" data-val="ctrl">Ctrl</span>
         </div>
-        <span class="key key__enter" data-code="KeyEnter" data-val="enter"
-          >Enter</span
-        >
-      </div>
-      <div class="keyboard-row fourth-row">
-        <span
-          class="key key__shift-left"
-          data-code="KeyShiftLeft"
-          data-val="shift"
-          >Shift</span
-        >
-        <span class="key" data-code="KeyZ" data-val="z">Z</span>
-        <span class="key" data-code="KeyX" data-val="x">X</span>
-        <span class="key" data-code="KeyC" data-val="c">C</span>
-        <span class="key" data-code="KeyV" data-val="v">V</span>
-        <span class="key" data-code="KeyB" data-val="b">B</span>
-        <span class="key" data-code="KeyN" data-val="n">N</span>
-        <span class="key" data-code="KeyM" data-val="m">M</span>
-        <div class="keyboard-row__two-keys">
-          <!-- '&lt' = '<' -->
-          <span class="key" data-code="Key&lt;" data-val="&lt;">&lt;</span>
-          <span class="key" data-code="Key," data-val=",">,</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key>" data-val=">">></span>
-          <span class="key" data-code="Key." data-val=".">.</span>
-        </div>
-        <div class="keyboard-row__two-keys">
-          <span class="key" data-code="Key?" data-val="?">?</span>
-          <span class="key" data-code="Key/" data-val="/">/</span>
-        </div>
-        <span
-          class="key key__shift-right"
-          data-code="KeyShiftRight"
-          data-val="shift"
-          >Shift</span
-        >
-      </div>
-      <div class="keyboard-row fifth-row">
-        <span class="key" data-code="KeyCtrlLeft" data-val="ctrl">Ctrl</span>
-        <span class="key" data-code="Key-Left" data-val="-">-</span>
-        <span class="key" data-code="KeyAltLeft" data-val="alt">Alt</span>
-        <span class="key key__space" data-code="KeySpace" data-val="space"
-          >Space</span
-        >
-        <span class="key" data-code="KeyAltRight" data-val="alt">Alt</span>
-        <span class="key" data-code="KeyFn" data-val="fn">Fn</span>
-        <span class="key" data-code="Key-Right" data-val="-">-</span>
-        <span class="key" data-code="KeyCtrlRight" data-val="ctrl">Ctrl</span>
       </div>
     </main>
   </body>
