@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-  /* 다크모드
-   filter: invert(100%) hue-rotate(180deg); */
+body.dark-mode {
+  filter: invert(100%) hue-rotate(180deg);
+  background-color: black;
 }

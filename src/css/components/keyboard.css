@@ -33,6 +33,16 @@
   align-items: center;
   justify-content: center;
   color: var(--gray);
+  cursor: pointer;
+}
+
+.key:hover {
+  background: lightgray;
+  transition: 0.3s;
+}
+
+.key:active {
+  background-color: black;
 }
 
 .keyboard-row__two-keys {

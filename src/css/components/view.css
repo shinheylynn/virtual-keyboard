@@ -5,6 +5,29 @@
   margin-right: 600px;
 }
 
+.mode-switch-button {
+  width: 60px;
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 25px;
+  position: relative;
+}
+
+.mode-switch-button button {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mode-switch-button button.active {
+  left: 30px;
+}
+
 .font {
   padding-left: 80px;
 }
