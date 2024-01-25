@@ -2,18 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 600px;
+  margin-right: 400px;
+  margin-top: 50px;
 }
 
 .mode-switch-button {
   width: 60px;
   height: 30px;
-  background-color: lightgray;
+  background-color: var(--gray);
   border-radius: 25px;
   position: relative;
 }
 
 .mode-switch-button button {
+  border: 2px solid var(--gray);
   width: 30px;
   height: 30px;
   background-color: white;
@@ -26,8 +28,4 @@
 
 .mode-switch-button button.active {
   left: 30px;
-}
-
-.font {
-  padding-left: 80px;
 }

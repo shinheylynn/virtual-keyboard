@@ -1,8 +1,9 @@
 @import 'variables.css';
 
 @import 'components/keyboard.css';
-@import 'components/view.css';
+@import 'components/mode.css';
 @import 'components/input.css';
+@import 'components/font.css';
 
 * {
   box-sizing: border-box;
@@ -11,4 +12,8 @@
 body.dark-mode {
   filter: invert(100%) hue-rotate(180deg);
   background-color: black;
+}
+
+input {
+  font-family: inherit;
 }

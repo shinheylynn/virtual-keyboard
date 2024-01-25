@@ -1,0 +1,64 @@
+.fonts {
+  width: 400px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.font__title {
+  border: 1px solild #ddd;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.font__selected-font {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 0;
+  width: 180px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.font__select-box {
+  left: 140px;
+  border: none;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  display: none;
+}
+
+.font__select-box.active {
+  display: block;
+  position: absolute;
+  background-color: var(--gray);
+}
+
+.font__select-box li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.font__select-box li:hover {
+  background-color: #38cd78;
+  border-radius: 5px;
+}
+
+.font1 {
+  font-family: 'Arial', sans-serif;
+}
+.font2 {
+  font-family: 'Times New Roman', serif;
+}
+.font3 {
+  font-family: 'Courier New', monospace;
+}
