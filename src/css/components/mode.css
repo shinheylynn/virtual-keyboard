@@ -12,6 +12,7 @@
   background-color: var(--gray);
   border-radius: 25px;
   position: relative;
+  min-width: 60px;
 }
 
 .mode-switch-button button {

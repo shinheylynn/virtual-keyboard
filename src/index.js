@@ -1,5 +1,3 @@
-
-
 const input = document.querySelector('#input-line input');
 
 function updateInput(value) {
@@ -83,3 +81,4 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
