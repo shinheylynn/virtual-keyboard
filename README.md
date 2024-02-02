@@ -1,5 +1,7 @@
 # virtual-keyboard
 
+https://github.com/shinheylynn/virtual-keyboard/assets/84219519/0661ba59-0f3b-485c-ba72-4705ffdb7304
+
 - 💡 **구현사항**
 
 * [x] 유저는 가상키보드와 확인할 수 있다.
