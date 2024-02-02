@@ -1,6 +1,7 @@
 # virtual-keyboard
 
-https://github.com/shinheylynn/virtual-keyboard/assets/84219519/0661ba59-0f3b-485c-ba72-4705ffdb7304
+https://github.com/shinheylynn/virtual-keyboard/assets/84219519/e9621cba-b35e-479e-b893-46018afa4d45
+
 
 - 💡 **구현사항**
 
